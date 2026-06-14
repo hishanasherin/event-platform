@@ -72,7 +72,6 @@ export default function LoginPage() {
               type="password"
               className={`form-input${errors.password ? ' error' : ''}`}
               value={form.password}
-              onChange={(e) => setForm({ ...form, password: form.password !== undefined ? e.target.value : '' })}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
               placeholder="••••••••"
               autoComplete="current-password"
